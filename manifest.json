@@ -1,0 +1,42 @@
+{
+    "author": "Michael Kongsgaard Jensen",
+    "background": {
+        "page": "background.html",
+        "persistent": true
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/tricom_logo.png",
+            "32": "images/tricom_logo.png",
+            "48": "images/tricom_logo.png",
+            "128": "images/tricom_logo.png"
+        }
+    },
+    "description": "Tricommerce Helper",
+    "icons": {
+        "16": "images/tricom_logo.png",
+        "32": "images/tricom_logo.png",
+        "48": "images/tricom_logo.png",
+        "128": "images/tricom_logo.png"
+    },
+    "manifest_version": 2,
+    "name": "Tricom",
+    "options_page": "options.html",
+    "permissions": [
+        "storage",
+        "contextMenus",
+        "activeTab",
+        "declarativeContent",
+        "cookies",
+        "webRequest",
+        "tabs",
+        "https://*/",
+        "http://*/"
+    ],
+    "version": "1.0",
+    "web_accessible_resources": [
+        "data/config.json"
+    ]
+    
+}

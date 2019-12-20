@@ -1,0 +1,43 @@
+https://tigerstaging.tricommerce.dk/shell/#/s/${sessionID}/tigerprocurement/product/${productID}
+
+
+<img style='float:left;width:100px' id=img0 src=https://imagestaging.tricommerce.dk/sm/238/38678838/Z2V0cGljLmFzcHg-SW1nU2l6ZT0zJkltZ0lEPTk2MTE5.png onclick=redirectToSolution()>
+Unit: karton 
+</br>
+Price excl: 542.72,-
+</br>
+Price incl: 678.4,-
+</br>
+</br>
+</a>
+<img style='float:left;width:100px' id=img1 src=https://imagestaging.tricommerce.dk/sm/238/30202450/Z2V0cGljLmFzcHg-SW1nU2l6ZT0yJkltZ0lEPTk5NTI2.png onclick=redirectToSolution()>
+Unit: karton 
+</br>
+Price excl: 442.98,-
+</br>
+Price incl: 553.725,-
+</br>
+</br>
+</a>
+<img style='float:left;width:100px' id=img2 src=https://imagestaging.tricommerce.dk/sm/238/30202459/Z2V0cGljLmFzcHg-SW1nU2l6ZT0yJkltZ0lEPTk5NDYy.png onclick=redirectToSolution()>
+Unit: karton 
+</br>
+Price excl: 394.02,-
+</br>
+Price incl: 492.525,-
+</br>
+</br>
+</a>
+
+
+'console.log("Created"); 
+var div = document.createElement("div");
+div.style.width = "125px";
+div.style.height = "100px";
+div.style.right = "30px";
+div.style.top = "200px";
+div.style.position = "absolute";
+div.innerHTML = "' + text + '";
+document.body.appendChild(div);
+var img0 = document.getElementById('img0'); 
+img0.onclick = function(element){ window.open(`https://google.com`);};

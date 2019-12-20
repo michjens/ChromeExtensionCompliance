@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        button {
+            height: 30px;
+            width: 70px;
+            outline: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            color: #3498db;
+            background: white;
+        }
+        h3 {
+          color: #27c6f7;
+        }
+        h1 {
+          color: #27c6f7;
+        }
+        label{
+          color: #27c6f7;
+
+        }
+        body{
+          background: white;
+        }
+        .loader {
+          border: 4px solid #f3f3f3; /* Light grey */
+          border-top: 4px solid #3498db; /* Blue */
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+          animation: spin 2s linear infinite;
+          margin-left: auto;
+          margin-right: auto; 
+        }
+        .logInStatus{
+          float: top;
+          margin-top: auto;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: auto;
+
+        }
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+      </style>
+      
+    </head>
+    <body>
+        
+        <h1 id="auth">Authenticating</h1>
+        <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+        <script type="text/javascript" src="loading-bar.js"></script>
+        <label for="inputUsername" id=usernameLabel>Username</label>
+        <!-- <h3 id="uName">Username</h3> -->
+        <input type="text" id="inputUsername" title="Username"><br>
+        <label for="inputPassword" id=passwordLabel>Password</label>
+        <!-- <h3 id='pWord'>Password</h3> -->
+        <input type="password" id="inputPassword" title="Password"><br>
+        <h3 id="logInStatus">Logged in</h3>
+        <button id="b1">Log out</button>
+
+            
+        
+        <button id="loginButton">Login</button> 
+        
+        <div class="loader" id="loaderCircle"></div>
+        <script src="popup.js"></script>
+        
+        <!-- <body onunload="chrome.extension.getBackgroundPage()"> -->
+    </body>
+  </html>
+
+  
