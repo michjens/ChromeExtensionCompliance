@@ -6,7 +6,6 @@
 
 var sessionID;
 var searchQuery;
-
 var data_login = {"username": '', "password": '', rememberMe: true, languageCode: "da-DK"}
 var responseJSON;
 var searchResponse;
